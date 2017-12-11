@@ -1,0 +1,35 @@
+/*sass file
+
+*/
+* {
+  box-sizing: border-box; }
+
+.nav_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 64px; }
+  .nav_header .logo_wrapper {
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 24px;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .nav_header h2 {
+    margin-top: 7px;
+    margin-right: 40px; }
+  .nav_header img {
+    margin-left: 10px; }
+  .nav_header .sign_in {
+    margin-top: 16px;
+    margin-right: 24px;
+    height: 70%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between; }
+  .nav_header span {
+    margin-top: 5px; }
+
+/*# sourceMappingURL=style.css.map */
