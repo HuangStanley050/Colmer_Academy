@@ -30,6 +30,40 @@
     display: flex;
     justify-content: space-between; }
   .nav_header span {
-    margin-top: 5px; }
+    margin-top: 8px; }
+
+.main_banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: lightgray; }
+  .main_banner .banner_pic {
+    background-image: url("/home/jinkazama/FFend_local_projects/Colmer_Academy/resources/banner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 30em;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-right: 24px; }
+  .main_banner .banner_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 30em;
+    margin-right: 100px;
+    margin-top: 32px; }
+    .main_banner .banner_text h1 {
+      font-weight: bold; }
+    .main_banner .banner_text h3 {
+      color: white;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      background-color: black;
+      width: 50%;
+      text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
