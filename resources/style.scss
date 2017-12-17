@@ -36,7 +36,7 @@ body{
 }
 
 .testDiv_padding{
-  padding-top: 16px;
+  //padding-top: 16px;
   padding-left: 16px;
   padding-bottom: 16px;
   padding-right: 16px;
@@ -276,7 +276,7 @@ body{
       @extend .testDiv;
       @extend .flex_row;
       @extend .testDiv_padding;
-      background-color: lightgray;
+      //background-color: lightgray;
 
 
       .test_div_3 img{
@@ -297,11 +297,54 @@ body{
 
   }
 
-
-
-
+}
 
 }
+
+.main_courses {
+  width: 100%;
+  background-color: lightgray;
+  //height: 1000px;
+  h1 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    //background-color: orange;
+  }
+
+  .six_courses {
+    width: 80%;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    //background-color: red;
+    div{
+      width: 30%;
+      height: 350px;
+      margin: 16px;
+      background-color: white;
+      @extend .flex_column;
+    }
+    img{
+      height:150px;
+      margin-bottom: 2px;
+    }
+    h2{
+      margin-left: 16px;
+      font-family: Helvetica;
+    }
+    h3{
+      margin-left: 16px;
+      font-size: 1em;
+      margin-top: 3px;
+      text-align: left;
+    }
+  }
 
 
 
