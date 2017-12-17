@@ -1,353 +1,460 @@
-/*sass file
+  /*sass file
 
-*/
-* {
-    box-sizing: border-box;
-}
-
-body{
-  border-style: solid;
-  border-width: think;
-  border-color: black;
-}
-
-.flex_row{
-  display: flex;
-  flex-direction: row;
-}
-
-.flex_column{
-  display: flex;
-  flex-direction: column;
-}
-
-.picture_margin{
-
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 24px;
-  margin-right: 24px;
-
-}
-
-.testDiv {
-  width: 100%;
-  height: 220px;
-}
-
-.testDiv_padding{
-  //padding-top: 16px;
-  padding-left: 16px;
-  padding-bottom: 16px;
-  padding-right: 16px;
-
-}
-
-.testDiv_img{
-  width: 25%;
-  height: 40%;
-}
-
-
-.nav_header {
-  //display: flex;
-  //flex-direction: row;
-  @extend .flex_row;
-  justify-content: space-between;
-  height: 64px;
-  //background-color: blue;
-
-  .logo_wrapper {
-    height: 70%;
-    margin-top: 10px;
-    margin-left: 24px;
-    width: 20%;
-    //display: flex;
-    //flex-direction: row;
-    @extend .flex_row;
-    //background-color: red;
-    justify-content: space-between;
-  }
-  h2 {
-    margin-top: 7px;
-    margin-right: 40px;
-
-  }
-  img{
-    margin-left: 10px;
+  */
+  * {
+      box-sizing: border-box;
   }
 
-  .sign_in {
-    margin-top: 16px;
-    margin-right: 24px;
-    height: 70%;
-    width: 40%;
-    //background-color: red;
+  body{
+    border-style: solid;
+    border-width: think;
+    border-color: black;
+  }
+
+  .flex_row{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+  }
 
- }
+  .flex_column{
+    display: flex;
+    flex-direction: column;
+  }
 
- span{
-   margin-top: 8px;
- }
+  .picture_margin{
 
-
-}
-
-
-
-.main_banner{
-
-  //display: flex;
-  //flex-direction: row;
-  @extend .flex_row;
-  justify-content: space-around;
-  width: 100%;
-
-  background-color: lightgray;
-
-  .banner_pic {
-    background-image: url("/home/jinkazama/FFend_local_projects/Colmer_Academy/resources/banner.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 60%;
-    height: 30em;
-    /*margin-top: 32px;
+    margin-top: 32px;
     margin-bottom: 32px;
-    margin-left: 24px;
-    margin-right: 24px;*/
-    @extend .picture_margin;
-  }
-
-    .banner_text {
-      //display: flex;
-      //flex-direction: column;
-      @extend .flex_column;
-      justify-content: center;
-      //background-color: green;
-      width: 40%;
-      height: 30em;
-      margin-right: 100px;
-      margin-top: 32px;
-
-       h1{
-         font-weight: bold;
-       }
-       h3{
-         color: white;
-         padding-top: 8px;
-         padding-bottom: 8px;
-         background-color: black;
-         width: 50%;
-         text-align: center;
-       }
-
-    }
-
-
-}
-
-.main_second{
-
-  @extend .flex_row;
-  justify-content: flex-start;
-  width: 100%;
-  margin-bottom: 32px;
-  //background-color: blue;
-  //height: 40em;
-
-  .main_picture_wrapper {
-    @extend .flex_column;
-
-    width: 55%;
-    margin-right: 5px;
-    justify-content: flex-start;
-    //background-color: red;
-
-  }
-
-  .main_pic {
-    background-image: url("/home/jinkazama/FFend_local_projects/Colmer_Academy/resources/information-main.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 25em;
-    /*margin-top: 32px;
     margin-left: 24px;
     margin-right: 24px;
-    margin-bottom: 32px;
-    */
-    @extend .picture_margin;
-  }
-
-  h1 {
-    font-weight: bold;
-    margin-top: 0;
-    margin-left: 24px;
-  }
-
-  p {
-    margin-top: 24px;
-    margin-left: 24px;
-    width: 75%;
-  }
-
-  h3{
-    margin-left: 24px;
 
   }
 
-  .second_wrapper {
+  .testDiv {
+    width: 100%;
+    height: 220px;
+  }
 
-    width: 45%;
-    height: 800px;
-    //background-color: orange;
-    margin-top: 32px;
-
-    .test_div_1{
-      @extend .testDiv;
-      @extend .flex_row;
-      justify-content: flex-start;
-      //background-color: aqua;
-      @extend .testDiv_padding;
-      /*padding-top: 16px;
-      padding-left: 16px;
-      padding-bottom: 16px;
-      padding-right: 16px;
-      */
-
-      .test_div_1 img{
-        /*width: 25%;
-        height: 40%;
-        */
-        @extend .testDiv_img;
-
-      }
-
-       .text_area {
-        width: 65%;
-        margin-top: 16px;
-        margin-left: 32px;
-
-
-      }
-      h2, h4{
-        margin-left: 0;
-      }
-
-
-
-
-    }
-
-
-
-    .test_div_2{
-      @extend .testDiv;
-      @extend .flex_row;
-      @extend .testDiv_padding;
-      //background-color: yellow;
-
-      .test_div_2 img{
-        @extend .testDiv_img;
-      }
-
-      .text_area {
-       width: 65%;
-       margin-top: 16px;
-       margin-left: 32px;
-
-
-     }
-     h2, h4{
-       margin-left: 0;
-     }
-
-
-
-
-
-
-    }
-
-
-    .test_div_3 {
-      @extend .testDiv;
-      @extend .flex_row;
-      @extend .testDiv_padding;
-      //background-color: lightgray;
-
-
-      .test_div_3 img{
-        @extend .testDiv_img;
-      }
-
-      .text_area {
-       width: 65%;
-       margin-top: 16px;
-       margin-left: 32px;
-
-
-     }
-     h2, h4{
-       margin-left: 0;
-     }
-
+  .testDiv_padding{
+    //padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
 
   }
 
-}
+  .testDiv_img{
+    width: 25%;
+    height: 40%;
+  }
 
-}
-
-.main_courses {
-  width: 100%;
-  background-color: lightgray;
-  //height: 1000px;
-  h1 {
+  .heading_main{
     margin-top: 32px;
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     text-align: center;
-    //background-color: orange;
   }
 
-  .six_courses {
-    width: 80%;
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
-    //background-color: red;
-    div{
-      width: 30%;
-      height: 350px;
-      margin: 16px;
-      background-color: white;
-      @extend .flex_column;
+
+  .nav_header {
+    //display: flex;
+    //flex-direction: row;
+    @extend .flex_row;
+    justify-content: space-between;
+    height: 64px;
+    //background-color: blue;
+
+    .logo_wrapper {
+      height: 70%;
+      margin-top: 10px;
+      margin-left: 24px;
+      width: 20%;
+      //display: flex;
+      //flex-direction: row;
+      @extend .flex_row;
+      //background-color: red;
+      justify-content: space-between;
+    }
+    h2 {
+      margin-top: 7px;
+      margin-right: 40px;
+
     }
     img{
-      height:150px;
-      margin-bottom: 2px;
+      margin-left: 10px;
     }
-    h2{
-      margin-left: 16px;
-      font-family: Helvetica;
-    }
-    h3{
-      margin-left: 16px;
-      font-size: 1em;
-      margin-top: 3px;
-      text-align: left;
-    }
+
+    .sign_in {
+      margin-top: 16px;
+      margin-right: 24px;
+      height: 70%;
+      width: 40%;
+      //background-color: red;
+      display: flex;
+      justify-content: space-between;
+
+   }
+
+   span{
+     margin-top: 8px;
+   }
+
+
   }
 
 
 
+  .main_banner{
+
+    //display: flex;
+    //flex-direction: row;
+    @extend .flex_row;
+    justify-content: space-around;
+    width: 100%;
+
+    background-color: lightgray;
+
+    .banner_pic {
+      background-image: url("/home/jinkazama/FFend_local_projects/Colmer_Academy/resources/banner.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 60%;
+      height: 30em;
+      /*margin-top: 32px;
+      margin-bottom: 32px;
+      margin-left: 24px;
+      margin-right: 24px;*/
+      @extend .picture_margin;
+    }
+
+      .banner_text {
+        //display: flex;
+        //flex-direction: column;
+        @extend .flex_column;
+        justify-content: center;
+        //background-color: green;
+        width: 40%;
+        height: 30em;
+        margin-right: 100px;
+        margin-top: 32px;
+
+         h1{
+           font-weight: bold;
+         }
+         h3{
+           color: white;
+           padding-top: 8px;
+           padding-bottom: 8px;
+           background-color: black;
+           width: 50%;
+           text-align: center;
+         }
+
+      }
 
 
-}
+  }
+
+  .main_second{
+
+    @extend .flex_row;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 32px;
+    //background-color: blue;
+    //height: 40em;
+
+    .main_picture_wrapper {
+      @extend .flex_column;
+
+      width: 55%;
+      margin-right: 5px;
+      justify-content: flex-start;
+      //background-color: red;
+
+    }
+
+    .main_pic {
+      background-image: url("/home/jinkazama/FFend_local_projects/Colmer_Academy/resources/information-main.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 90%;
+      height: 25em;
+      /*margin-top: 32px;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 32px;
+      */
+      @extend .picture_margin;
+    }
+
+    h1 {
+      font-weight: bold;
+      margin-top: 0;
+      margin-left: 24px;
+    }
+
+    p {
+      margin-top: 24px;
+      margin-left: 24px;
+      width: 75%;
+    }
+
+    h3{
+      margin-left: 24px;
+
+    }
+
+    .second_wrapper {
+
+      width: 45%;
+      height: 800px;
+      //background-color: orange;
+      margin-top: 32px;
+
+      .test_div_1{
+        @extend .testDiv;
+        @extend .flex_row;
+        justify-content: flex-start;
+        //background-color: aqua;
+        @extend .testDiv_padding;
+        /*padding-top: 16px;
+        padding-left: 16px;
+        padding-bottom: 16px;
+        padding-right: 16px;
+        */
+
+        .test_div_1 img{
+          /*width: 25%;
+          height: 40%;
+          */
+          @extend .testDiv_img;
+
+        }
+
+         .text_area {
+          width: 65%;
+          margin-top: 16px;
+          margin-left: 32px;
+
+
+        }
+        h2, h4{
+          margin-left: 0;
+        }
+
+
+
+
+      }
+
+
+
+      .test_div_2{
+        @extend .testDiv;
+        @extend .flex_row;
+        @extend .testDiv_padding;
+        //background-color: yellow;
+
+        .test_div_2 img{
+          @extend .testDiv_img;
+        }
+
+        .text_area {
+         width: 65%;
+         margin-top: 16px;
+         margin-left: 32px;
+
+
+       }
+       h2, h4{
+         margin-left: 0;
+       }
+
+
+
+
+
+
+      }
+
+
+      .test_div_3 {
+        @extend .testDiv;
+        @extend .flex_row;
+        @extend .testDiv_padding;
+        //background-color: lightgray;
+
+
+        .test_div_3 img{
+          @extend .testDiv_img;
+        }
+
+        .text_area {
+         width: 65%;
+         margin-top: 16px;
+         margin-left: 32px;
+
+
+       }
+       h2, h4{
+         margin-left: 0;
+       }
+
+
+    }
+
+  }
+
+  }
+
+  .main_courses {
+    width: 100%;
+    background-color: lightgray;
+    //height: 1000px;
+
+    h1 {
+      /*margin-top: 32px;
+      margin-bottom: 32px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      text-align: center;*/
+      //background-color: orange;
+      @extend .heading_main;
+    }
+
+    .six_courses {
+      width: 80%;
+      height: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-flow: row wrap;
+      //background-color: red;
+      div{
+        width: 30%;
+        height: 350px;
+        margin: 16px;
+        background-color: white;
+        @extend .flex_column;
+      }
+      img{
+        height:150px;
+        margin-bottom: 2px;
+      }
+      h2{
+        margin-left: 16px;
+        font-family: Helvetica;
+      }
+      h3{
+        margin-left: 16px;
+        font-size: 1em;
+        margin-top: 3px;
+        text-align: left;
+      }
+    }
+
+
+
+
+
+  }
+
+
+
+  .thesis_wrapper{
+    width: 100%;
+    //height: 800px;
+    //background-color: lightgray;
+
+
+
+    h1{
+      @extend .heading_main;
+      //background-color: red;
+    }
+
+    .thesis_flex_wrapper{
+      @extend .flex_row;
+      justify-content: flex-start;
+      width: 100%;
+      //background-color: red;
+      height: 800px;
+
+      .thesis_video{
+        width: 54%;
+        height: 43em;
+
+        margin-left: 24px;
+        //background-color: blue;
+
+      }
+      video{
+        width: 100%;
+        height: 64%;
+
+      }
+      h2,p{
+        font-family: Helvetica;
+        margin-left: 24px;
+      }
+
+      .thesis_info{
+        width: 46%;
+        height: 30em;
+        margin: 24px;
+        //background-color: Cadetblue;
+
+        .thesis_first{
+          @extend .testDiv;
+          @extend .flex_row;
+          @extend .testDiv_padding;
+          background-color: lightgray;
+        }
+         img{
+           margin-top: 16px;
+          width: 35%;
+        }
+        .text_area {
+         width: 65%;
+         margin-top: 16px;
+         margin-left: 32px;
+         //background-color: yellow;
+          }
+          h2,h4{
+            margin-left: 0;
+          }
+
+         .thesis_second{
+           @extend .testDiv;
+           @extend .flex_row;
+           @extend .testDiv_padding;
+           //background-color: orange;
+         }
+
+         img {
+           margin-top: 16px;
+           width: 35%;
+         }
+
+         .text_area {
+          width: 65%;
+          margin-top: 16px;
+          margin-left: 32px;
+          //background-color: yellow;
+           }
+           h2,h4{
+             margin-left: 0;
+           }
+
+
+
+
+
+      }
+    }
+
+  }

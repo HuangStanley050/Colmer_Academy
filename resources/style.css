@@ -1,6 +1,6 @@
-/*sass file
+  /*sass file
 
-*/
+  */
 * {
   box-sizing: border-box; }
 
@@ -9,7 +9,7 @@ body {
   border-width: think;
   border-color: black; }
 
-.flex_row, .nav_header, .nav_header .logo_wrapper, .main_banner, .main_second, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3 {
+.flex_row, .nav_header, .nav_header .logo_wrapper, .main_banner, .main_second, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3, .thesis_wrapper .thesis_flex_wrapper, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_second {
   display: flex;
   flex-direction: row; }
 
@@ -23,11 +23,11 @@ body {
   margin-left: 24px;
   margin-right: 24px; }
 
-.testDiv, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3 {
+.testDiv, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_second {
   width: 100%;
   height: 220px; }
 
-.testDiv_padding, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3 {
+.testDiv_padding, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_second {
   padding-left: 16px;
   padding-bottom: 16px;
   padding-right: 16px; }
@@ -35,6 +35,14 @@ body {
 .testDiv_img, .main_second .second_wrapper .test_div_1 .test_div_1 img, .main_second .second_wrapper .test_div_2 .test_div_2 img, .main_second .second_wrapper .test_div_3 .test_div_3 img {
   width: 25%;
   height: 40%; }
+
+.heading_main, .main_courses h1, .thesis_wrapper h1 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center; }
 
 .nav_header {
   justify-content: space-between;
@@ -157,12 +165,12 @@ body {
   width: 100%;
   background-color: lightgray; }
   .main_courses h1 {
-    margin-top: 32px;
+    /*margin-top: 32px;
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    text-align: center; }
+    text-align: center;*/ }
   .main_courses .six_courses {
     width: 80%;
     height: 800px;
@@ -186,5 +194,46 @@ body {
       font-size: 1em;
       margin-top: 3px;
       text-align: left; }
+
+.thesis_wrapper {
+  width: 100%; }
+  .thesis_wrapper .thesis_flex_wrapper {
+    justify-content: flex-start;
+    width: 100%;
+    height: 800px; }
+    .thesis_wrapper .thesis_flex_wrapper .thesis_video {
+      width: 54%;
+      height: 43em;
+      margin-left: 24px; }
+    .thesis_wrapper .thesis_flex_wrapper video {
+      width: 100%;
+      height: 64%; }
+    .thesis_wrapper .thesis_flex_wrapper h2, .thesis_wrapper .thesis_flex_wrapper p {
+      font-family: Helvetica;
+      margin-left: 24px; }
+    .thesis_wrapper .thesis_flex_wrapper .thesis_info {
+      width: 46%;
+      height: 30em;
+      margin: 24px; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first {
+        background-color: lightgray; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info img {
+        margin-top: 16px;
+        width: 35%; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info .text_area {
+        width: 65%;
+        margin-top: 16px;
+        margin-left: 32px; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info h2, .thesis_wrapper .thesis_flex_wrapper .thesis_info h4 {
+        margin-left: 0; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info img {
+        margin-top: 16px;
+        width: 35%; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info .text_area {
+        width: 65%;
+        margin-top: 16px;
+        margin-left: 32px; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info h2, .thesis_wrapper .thesis_flex_wrapper .thesis_info h4 {
+        margin-left: 0; }
 
 /*# sourceMappingURL=style.css.map */
