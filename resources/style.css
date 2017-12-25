@@ -6,10 +6,10 @@
 
 body {
   border-style: solid;
-  border-width: think;
+  border-width: thick;
   border-color: black; }
 
-.flex_row, .nav_header, .nav_header .logo_wrapper, .main_banner, .main_second, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3, .thesis_wrapper .thesis_flex_wrapper, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_second {
+.flex_row, .mobile_nav, .nav_header, .nav_header .logo_wrapper, .main_banner, .main_second, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3, .thesis_wrapper .thesis_flex_wrapper, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_second, .footer {
   display: flex;
   flex-direction: row; }
 
@@ -43,6 +43,11 @@ body {
   margin-right: auto;
   width: 80%;
   text-align: center; }
+
+.mobile_nav {
+  justify-content: space-around;
+  width: 100%;
+  height: 64px; }
 
 .nav_header {
   justify-content: space-between;
@@ -195,6 +200,24 @@ body {
       margin-top: 3px;
       text-align: left; }
 
+.simple_six {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px; }
+  .simple_six div {
+    margin: auto;
+    width: 90%;
+    text-align: left;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    background-color: lightgray;
+    height: 50px; }
+  .simple_six h3 {
+    margin-left: 15px; }
+
 .thesis_wrapper {
   width: 100%; }
   .thesis_wrapper .thesis_flex_wrapper {
@@ -235,5 +258,126 @@ body {
         margin-left: 32px; }
       .thesis_wrapper .thesis_flex_wrapper .thesis_info h2, .thesis_wrapper .thesis_flex_wrapper .thesis_info h4 {
         margin-left: 0; }
+
+.footer {
+  border-top: 2px solid black;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px; }
+  .footer .copyright {
+    margin-top: 16px;
+    margin-left: 24px;
+    min-width: 70px;
+    height: 100px; }
+  .footer .term_privacy {
+    margin-top: 16px;
+    margin-left: 24px;
+    padding-left: 10px;
+    width: 15%;
+    height: 100px; }
+
+/*************Media Query section***********************/
+@media only screen and (min-width: 470px) {
+  .mobile_nav {
+    display: none; }
+
+  .simple_six {
+    display: none; } }
+@media only screen and (max-width: 470px) {
+  .nav_header {
+    display: none; }
+
+  .main_banner {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 84px; }
+    .main_banner .banner_pic {
+      width: 100%;
+      margin: 0;
+      height: 20rem; }
+    .main_banner .banner_text {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      width: 100%;
+      height: auto; }
+    .main_banner h1 {
+      text-align: center; }
+    .main_banner h2 {
+      text-align: center; }
+    .main_banner h3 {
+      background-color: gray;
+      color: white;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px; }
+
+  .main_second {
+    flex-direction: column;
+    height: 1000px; }
+    .main_second .main_picture_wrapper {
+      display: none; }
+    .main_second .second_wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .main_second .second_wrapper .test_div_1 {
+        padding: 0;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 95px; }
+        .main_second .second_wrapper .test_div_1 img {
+          width: 90%;
+          height: 200px;
+          margin: auto;
+          object-fit: fill; }
+        .main_second .second_wrapper .test_div_1 .text_area {
+          margin-top: 0;
+          padding: 0;
+          height: 250px;
+          margin-bottom: 75px; }
+      .main_second .second_wrapper .test_div_2 {
+        padding: 0;
+        margin-top: 60px;
+        margin-bottom: 74px;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around; }
+        .main_second .second_wrapper .test_div_2 img {
+          width: 90%;
+          height: 200px;
+          margin: auto;
+          object-fit: fill; }
+        .main_second .second_wrapper .test_div_2 .text_area {
+          margin-top: 0;
+          padding: 0;
+          height: 200px;
+          margin-bottom: 145px; }
+      .main_second .second_wrapper .test_div_3 {
+        padding: 0;
+        margin-top: 18px;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around; }
+        .main_second .second_wrapper .test_div_3 img {
+          width: 90%;
+          height: 200px;
+          margin: auto;
+          object-fit: fill; }
+        .main_second .second_wrapper .test_div_3 .text_area {
+          margin-top: 0;
+          padding: 0;
+          height: 200px; }
+
+  .main_courses {
+    display: flex;
+    flex-direction: column;
+    background-color: white; }
+    .main_courses .six_courses {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */
