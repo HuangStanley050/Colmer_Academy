@@ -378,6 +378,25 @@ body {
     flex-direction: column;
     background-color: white; }
     .main_courses .six_courses {
-      display: none; } }
+      display: none; }
+
+  .thesis_flex_wrapper {
+    max-width: 100%;
+    max-height: 300px;
+    justify-content: center; }
+    .thesis_flex_wrapper .thesis_video {
+      max-height: 300px;
+      text-align: center; }
+    .thesis_flex_wrapper h2, .thesis_flex_wrapper p {
+      display: none; }
+
+  .thesis_info {
+    display: none; }
+
+  .footer {
+    height: 100px; }
+
+  .term_privacy {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
